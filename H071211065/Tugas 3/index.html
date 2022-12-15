@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>PubgMobile</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-sm bg-light navbar-dark">
+    <div class="container-fluid justify-content-center">
+      <a class="navbar-brand text-dark" href="#"><strong>PUBG MOBILE</strong></a>
+    </div>
+  </nav>
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+  <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+      <img src="logopubg.png" alt="Logo" style="width:40px;" class="rounded-pill">
+    </a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="mynavbar">
+    <ul class="navbar-nav me-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#login">Login</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#wallpaper">Wallpaper</a>
+      </li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Play Now!</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#qp">Texas Hold'em</a></li>
+                <li><a class="dropdown-item" href="#qp">Omaha</a></li>
+                <li><a class="dropdown-item" href="#qp">Seven-card stud</a></li>
+                <li><a class="dropdown-item" href="#qp">Five-card draw</a></li>
+            </ul>
+        </li>
+    </ul>
+    <form class="d-flex">
+      <input class="form-control me-2" type="text" placeholder="Search">
+      <button class="btn btn-secondary" type="button">Search</button>
+    </form>
+  </div>
+</div>
+</nav>
+<!-- End Navbar -->
+
+<!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+  </div>
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="p1.jpg" alt="Pubg Mobile First Design" class="d-block" style="width:100%">
+      <div class="carousel-caption">
+        <h3>Pubg Mobile First Design</h3>
+        <p>This image is the Final design of Pubg Playing Poker more clean up, and color lighting adjustments.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="p2.jpg" alt="Pubg Mobile Battle Grounds Design" class="d-block" style="width:100%">
+      <div class="carousel-caption">
+        <h3>Pubg Mobile Battle Grounds Design</h3>
+        <p>This image is the Santa design of Pubg Playing Battle Grounds.</p>
+      </div> 
+    </div>
+    <div class="carousel-item">
+      <img src="p3.jpg" alt="Pubg Mobile Character Final Design" class="d-block" style="width:100%">
+      <div class="carousel-caption">
+        <h3>Pubg Mobile Character Final Design</h3>
+        <p>This image is the First design of Pubg Playing Battle Grounds, block in basic colors and values.</p>
+      </div>  
+    </div>
+  </div>
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+<!-- End Carousel -->
+
+    <!-- Login -->
+    <h2 id="login" class="text-center pt-5 pb-3">Login</h2>
+    <div class="container mt-3 alert alert-success">
+      <strong>Success!</strong> You've succesfully create a new account, please login below.
+    </div>
+    <div class="container mt-3">
+    <form>
+      <div class="mb-3 mt-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+      </div>
+      <div class="mb-3 mt-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1">
+      </div>
+      <div class="mb-3 form-check mt-3 ">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+  <!-- End Login -->
+
+<!-- Quick Play -->
+<h2 class="text-center pt-5 pb-5" id="qp">Maps</h2>
+  <div class="container-fluid mt-3">
+    <div class="row text-light bg-dark">
+      <div class="col-sm-3 p-3 text-center"><button type="button" class="btn btn-success">
+        Play Now! <strong>Erangel</strong></button><div class="text-start pt-3"><p>As the very first map introduced in the game, Erangel is known as the default PUBG map. It features well-balanced terrain suitable for mid to long-range combat, a standard map size, and almost no special features. You can find the best loot along with the most players around the Sosnovka Military Base, Pochinki, and the School. If you want to avoid crossing the bridge to Sosnovka Island in the south, you can use one of the four ferries..</p></div></div>
+      <div class="col-sm-3 p-3 text-center"><button type="button" class="btn btn-success">
+        Play Now! <strong>Miramar</strong> </button><div class="text-start pt-3"><p>The best way to race around Miramar is by the map-exclusive quad, but beware; this level also features the LYNX AMR weapon, a sniper rifle capable of blowing up vehicles. Some of Miramar’s best loot spots are big cities El Pozo and Los Leones, Pecado, and the Hacienda del Patron. Miramar is the only map that has vending machines dotted around the map – head to one of these machines to find energy drinks and painkillers.</p></div></div>
+      <div class="col-sm-3 p-3 text-center"><button type="button" class="btn btn-success">
+        Play Now! <strong>Vikendi</strong> </button><div class="text-start pt-3"><p>Snowy Vikendi may be a warzone, but its public transport system is still operating. Jumping on a train is a handy way to move across the map, but be careful; they’re not exactly stealthy. If you don’t feel like jumping on a moving train, you can also hop on at one of the map’s 11 train stations. The train schedule is the same for every match. If you’re looking for the best Vikendi loot, try the Cosmodrome, Dinoland, Castle, and Cement Factory.</p></div></div>
+      <div class="col-sm-3 p-3 text-center"><button type="button" class="btn btn-success">
+        Play Now! <strong>Sanhok</strong></button><div class="text-start pt-3"><p>Sanhok’s small size and dense forest make it perfect for fast-paced close-quarters gunfights. As early-game encounters are almost guaranteed, it’s important to find decent loot right away. If you feel confident, the best places for top-tier gear are the Bootcamp, the Ruins, and Paradise Resort. You can also try to destroy a Loot Truck, but know that you’ll likely be surrounded by other players. If you want to save the heated battles for later, try a landing spot like the Kampong or the Docks.</p></div></div>
+    </div>
+  </div>
+<!-- End Quick Play -->
+
+<!-- About -->
+<h2  id="about" class="text-center pt-5 pb-5">About</h2>
+<section class="about">
+  <div class="container">
+  <div class="row justify-content-center text-justify pb-5">
+    <div class="col-md-5">
+      <p>PUBG: Battlegrounds (previously known as PlayerUnknown's Battlegrounds) is a battle royale game developed by PUBG Studios and published by Krafton. The game, which was inspired by the Japanese film Battle Royale (2000), is based on previous mods created by Brendan "PlayerUnknown" Greene for other games, and expanded into a standalone game under Greene's creative direction. It is the first game in the PUBG Universe series. </p>
+        </div>
+    <div class="col-md-5">
+      <p>The game is played from either a third-person or first-person perspective. In the game, up to one hundred players parachute onto an island where they scavenge for weapons and equipment to kill other players while avoiding getting killed themselves. The available safe area of the game's map decreases in size over time, directing surviving players into an ever tightening space to force encounters. The last surviving player (or team) wins the round.</p>
+        </div>
+    <div class="col-md-5">
+      <p>It was first released for Windows via Steam's early access beta program in March 2017, with a full release in December 2017. The game was also released by Microsoft Studios for the Xbox One via its Xbox Game Preview program that same month, and officially released in September 2018.</p>
+        </div>
+    <div class="col-md-5">
+      <p>PUBG Mobile, a free-to-play mobile game version for Android and iOS, was released in 2018, in addition to a port for the PlayStation 4. A version for the Stadia streaming platform was released in April 2020, with Xbox Series X/S and PlayStation 5 versions being released in November 2020. The game has been free-to-play for all platforms since January 12, 2022.</p>
+        </div>
+    <div class="col-md-5">
+      <p>The game received positive reviews from critics, who found that while the game had some technical flaws, it presented new types of gameplay that could be easily approached by players of any skill level and was highly replayable. The game was attributed to popularizing the battle royale genre, with a number of unofficial Chinese clones also being produced following its success.</p>
+        </div>
+    <div class="col-md-5">
+      <p>The game received several Game of the Year nominations and having set seven Guinness World Records, among many other accolades. PUBG Corporation has run several small tournaments and introduced in-game tools to help with broadcasting the game to spectators, as they wish for it to become a popular esport. As it having sold over 75 million copies on personal computers and game consoles, is the best-selling video game on PC and Xbox One, and the fifth best-selling video game of all time.</p>
+        </div>
+  </div>
+  </div>
+</section>
+<!-- End About -->
+
+<!-- Wallpaper -->
+<h2 class="text-center pt-5 pb-5" id="wallpaper">Wallpaper</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card">
+              <img
+                src="p1.jpg"
+                class="card-img-top"
+                alt="Jokers play poker by Andy Timm"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Pubg Mobile First Design</h5>
+                <p class="card-text">
+                  This image is the Final design of Pubg more clean up, and color lighting adjustments.
+                </p>
+                <a href="#!" class="btn btn-primary">Download</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4  d-lg-block">
+            <div class="card">
+              <img
+                src="p2.jpg"
+                class="card-img-top"
+                alt="Jokers play poker Santa by Andy Timm"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Pubg Mobile Battle Grounds Design</h5>
+                <p class="card-text">
+                  This image is the Santa design of Pubg Playing Battle Grounds.  
+                </p>
+                <a href="#!" class="btn btn-primary">Download</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 d-lg-block">
+            <div class="card">
+              <img
+                src="p3.jpg"
+                class="card-img-top"
+                alt="Jokers Playing Poker - Album on Imgur"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Pubg Mobile Character Final Design</h5>
+                <p class="card-text">
+                  This image is the First design of Pubg Playing Battle Grounds, block in basic colors and values.
+                </p>
+                <a href="#!" class="btn btn-primary">Download</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Wallpaper -->
+  <br>
+  <!-- Footer -->
+  <footer class="bg-dark text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+  
+        <!-- Twitter -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-twitter"></i
+        ></a>
+  
+        <!-- Google -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-google"></i
+        ></a>
+  
+        <!-- Instagram -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-instagram"></i
+        ></a>
+  
+        <!-- Linkedin -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+  
+        <!-- Github -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-github"></i
+        ></a>
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3">
+      © 2022 Copyright:
+      <a class="text-white" href="#">PubgMobile</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- End Footer -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/a29f492d6e.js" crossorigin="anonymous"></script>
+</body>
+</html>
