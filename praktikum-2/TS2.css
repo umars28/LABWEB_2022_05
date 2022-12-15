@@ -1,0 +1,115 @@
+*,html,body{
+    margin: 0;
+    padding: 0;
+    font-family: "Robotto", sans-serif;
+}
+
+.fContainer{
+    width: 100%;
+    height: 100%;
+    background-color:   #f0f0f5;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper{
+    position: fixed;
+    display: flex;
+    top: 0;
+    justify-content: space-between;
+    font-size: 20px;
+    padding: 15;
+    width: 100%;
+    height: 80px;
+    background-color: #D9D9D9;
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,0.5);
+}
+.brand{
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+}
+.navigation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right:25px;
+    z-index: 20;
+    top: 0;
+}
+.navigation > li{
+    list-style: none;
+    padding: 15px;
+}
+.navigation > li > a{
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.jumbotron{
+    margin-top: 95px;
+    width: 100%;
+    height: 600px;
+    /* background-color: yellow; */
+}
+.jumbotron>img{
+    height: 600px;
+    width: 100%;
+}
+.text1{
+    position:absolute;
+    top: 60%;
+    width: 100%;
+    text-align: center;
+    color: whitesmoke;
+}
+.content{
+    padding-top: 50px;
+    width: 75%;
+    margin: auto;
+}
+.ckiri{
+    margin-top: 25px;
+    width: 50%;
+    height: 450px;
+    /* background-color: bisque; */
+    box-sizing: border-box;
+    float:right;
+    padding: 20px;
+    letter-spacing: 1px;
+    font-family: 'Times New Roman', Times, sans-serif;
+}
+.ckanan{
+    margin-top: 25px;
+    /* background-color: aqua; */
+    height: 450px;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 20px;
+    letter-spacing: 1px;
+    font-family: 'Times New Roman', Times, sans-serif;
+}
+.judulcontainer2{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.container2{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: aquamarine; */
+}
+.container2 .isi{
+    width: 200px;
+    /* background-color: blanchedalmond; */
+}
+.container2 .isi img{
+    width: 200px;
+    border-radius: 30px;
+}
+.container2 h4 {
+    text-align: center;
+}
+.container2 p{
+    text-align: center;
+}

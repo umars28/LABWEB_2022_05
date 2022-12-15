@@ -1,0 +1,25 @@
+body{
+    background-color: #1E5128;
+}
+.menuStyle{
+    width: 50%;
+    background-color: #191A19;
+    color: white;
+    border-radius: 10px;
+    border-color: white;
+    border-style: solid;
+    box-shadow: 3px 3px 10px black;
+    z-index: 5;
+}
+
+.gameStyle{
+    width: 50%;
+    background-color: #191A19;
+    color: white;
+    border-radius: 10px;
+    border-color: white;
+    border-style: solid;
+    box-shadow: 3px 3px 10px black;
+    position: absolute;
+    top: 0%;
+}

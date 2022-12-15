@@ -1,0 +1,1 @@
+DROP Table tb_users;

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No 3</title>
+</head>
+
+<body>
+    <script>
+        const input = prompt("Masukkan kalimat").toLowerCase();
+        let words = input.split("");
+
+        while (true) {
+            if (words.length == 0) {
+                break;
+            }
+            var cari = words[0];
+            let jumlah = 0;
+
+            for (let item of words) {
+                jumlah += (item == cari) ? 1 : 0;
+            }
+
+            if (cari == ' ') {
+                console.log(`spasi = ${jumlah}`);
+            } else {
+                console.log(`${cari} = ${jumlah}`);
+            }
+            words = words.filter((element, index) => element != cari);
+        }
+    </script>
+</body>
+
+</html>

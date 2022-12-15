@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.menu{
+    background-color: #394531;
+    border-radius: 20px;
+    width: 50%;
+    height: 50%;
+    margin: auto;
+}
+#dealer-cards img {
+    height: 175px;
+    width: 125px;
+    margin: 1px;
+}
+
+#your-cards img {
+    height: 175px;
+    width: 125px;
+    margin: 1px;
+}
+
+.menuStyle{
+    width: 40%;
+    background-color: #191A19;
+    color: white;
+    border-radius: 10px;
+    border-color: white;
+    border-style: solid;
+    box-shadow: 3px 3px 10px black;
+    z-index: 5;
+    /* display: none; */
+}
+.gameStyle{
+    width: 40%;
+    background-color: #191A19;
+    color: white;
+    border-radius: 10px;
+    border-color: white;
+    border-style: solid;
+    box-shadow: 3px 3px 10px black;
+    position: absolute;
+    top: 0%;
+    z-index: 2;
+    /* display: none; */
+}
+
+#hideMenu{
+    display: none;
+}
+
+#changeButton{
+    display: none;
+}
+
+.confirmLayout{
+    width: 30%;
+    background-color: #191A19;
+    color: white;
+    border-radius: 10px;
+    border-color: white;
+    border-style: solid;
+    box-shadow: 3px 3px 10px black;
+    position: absolute;
+    top: 60%;
+}
+
+#popUpConfirm{
+    z-index: 4;
+}
