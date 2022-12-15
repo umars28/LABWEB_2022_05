@@ -1,5 +1,7 @@
 <?php
 require 'function.php';
+$error    = '';
+$sukses   = '';
 
 if (!empty($_SESSION["id"])) {
   header("Location: index.php");
@@ -13,13 +15,11 @@ if (isset($_POST["btnLogin"])) {
   if ($result == 1) {
     $_SESSION["login"] = true;
     $_SESSION["id"] = $login->idUser();
-    header("Location: index.php");
+    $sukses         = 'Login Berhasil';
   } else if ($result == 10) {
-    echo
-    "<script> alert('Wrong Password'); </script>";
+    $error          = 'Password Salah';
   } else if ($result == 100) {
-    echo
-    "<script> alert('User Not Registered'); </script>";
+    $error          = 'Akun belum terdaftar';
   }
 }
 ?>
@@ -41,20 +41,42 @@ if (isset($_POST["btnLogin"])) {
   <div class="container mt-5">
     <div class="row justify-content-center">
       <div class="col-md-6">
-
-        <?php
-        if (isset($_GET['pesan'])) {
-        ?>
-          <div class="alert alert-danger alert-dismissible fade show" role="alert">
-            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-x-circle-fill me-2" viewBox="0 0 16 16">
-              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z" />
-            </svg>
-            <strong>Login Gagal </strong><?php echo $_GET['pesan']; ?>
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-          </div>
-        <?php } ?>
-
         <div class="card">
+          <?php
+          if ($error) {
+          ?>
+            <div class="alert alert-danger d-flex align-items-center" role="alert">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-x-circle-fill me-2" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z" />
+              </svg>
+              <div>
+                <?php echo $error ?>
+              </div>
+            </div>
+          <?php
+            header("refresh:5;url=login.php"); //5 : detik
+          }
+          ?>
+          <?php
+          if ($sukses) {
+          ?>
+            <div class="alert alert-success d-flex align-items-center" role="alert">
+              <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                </symbol>
+              </svg>
+              <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:">
+                <use xlink:href="#check-circle-fill" />
+              </svg>
+              <div>
+                <?php echo $sukses ?>
+              </div>
+            </div>
+          <?php
+            header("refresh:2;url=index.php");
+          }
+          ?>
           <div class="card-header text-center bg-primary text-light">
             <strong>LOGIN</strong>
           </div>
