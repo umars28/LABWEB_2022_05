@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Character</title>
+    <script>
+        var str = prompt("Input text");
+            var counts = {};
+            for (let i = 0; i < str.length; i++) {
+                var ch = str[i] === " " ? "space": str[i];
+                if(counts[ch]) {
+                    counts[ch] += 1;
+                } else {
+                    counts[ch] = 1;
+                }
+            }
+            for (const i in counts) {
+                document.write("<p>" + i + " = " + counts[i] + "</p>");
+            }
+            document.getElementById("demo");
+    </script>
+</head>
+<body>
+
+    <p id = demo></p>
+</body>
+</html>
