@@ -9,7 +9,7 @@
   <body>
     <div class="container text-center position-absolute top-50 start-50 translate-middle">
         <div class="h1">Laravel-2</div>
-            <a class="btn btn-primary" href="/product" role="button">Product</a>
+            <a class="btn btn-primary" href="/products" role="button">Product</a>
             <a class="btn btn-primary" href="/category" role="button">Category</a>
             <a class="btn btn-primary" href="/sellers" role="button">Seller</a>
             <a class="btn btn-primary" href="/permission" role="button">Permission</a>
