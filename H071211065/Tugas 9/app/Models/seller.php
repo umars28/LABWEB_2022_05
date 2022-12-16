@@ -19,7 +19,7 @@ class seller extends Model
 
     public function permissions()
     {
-        return $this-> belongsToMany(permission::class, 'seller_permissions', 'seller_id', 'permission_id');
+        return $this->belongsToMany(permission::class, 'seller_permissions', 'seller_id', 'permission_id');
     }
 
     public function setNameAttribute($value){  
